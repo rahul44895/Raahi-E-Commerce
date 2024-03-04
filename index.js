@@ -31,5 +31,5 @@ app.use("/api/productRoute", require("./routes/productRoute"));
 app.use("/api/orderRoute", require("./routes/orderRoute"));
 
 app.listen(process.env.PORT, () => {
-  console.log(`'App is listening on port ${process.env.PORT}`);
+  console.log(`App is listening on port ${process.env.PORT}`);
 });
