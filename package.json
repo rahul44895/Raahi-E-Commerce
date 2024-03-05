@@ -1,8 +1,11 @@
 {
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "prod": "NODE_ENV=production nodemon index.js"
+    "client-install": "cd client && yarn",
+    "client-build": "cd client && yarn run build",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && yarn start",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
   },
   "author": "Rahul Singh",
   "dependencies": {
